@@ -5,6 +5,8 @@
   <img src="banner.png" alt="Smart Counsel AI Banner" width="100%">
 </p>
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Streamlit-blue?logo=streamlit)](https://smartcounselai-----streamit-app-1123.streamlit.app)
+
 <!-- Badges -->
 <p align="center">
   <!-- Tech Stack -->
