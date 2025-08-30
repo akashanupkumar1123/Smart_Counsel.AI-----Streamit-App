@@ -13,6 +13,9 @@
   <a href="https://huggingface.co/"><img src="https://img.shields.io/badge/HuggingFace-Transformers-yellow.svg" alt="HuggingFace"></a>
   <a href="https://pytorch.org/"><img src="https://img.shields.io/badge/PyTorch-ML-orange.svg" alt="PyTorch"></a>
   <a href="https://github.com/facebookresearch/faiss"><img src="https://img.shields.io/badge/FAISS-v1-blueviolet.svg" alt="FAISS"></a>
+  <a href="https://www.oper.ai/"><img src="https://img.shields.io/badge/Operai-Mini-red.svg" alt="Operai Mini"></a>
+  <a href="https://openai.com/"><img src="https://img.shields.io/badge/OpenAI-API-blue.svg" alt="OpenAI API"></a>
+  <a href="https://en.wikipedia.org/wiki/Retrieval-augmented_generation"><img src="https://img.shields.io/badge/RAG-Retrieval%20Augmented%20Generation-purple.svg" alt="RAG"></a>
 
 
 ## 🏫 About Smart Counsel AI 🎯  
