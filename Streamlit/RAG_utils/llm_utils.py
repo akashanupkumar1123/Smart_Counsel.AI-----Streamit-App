@@ -6,8 +6,7 @@ import streamlit as st
 # ---------------------------
 # Load environment variables
 # ---------------------------
-load_dotenv()
-OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
+OPENROUTER_API_KEY = st.secrets.get("OPENROUTER_API_KEY")
 OPENROUTER_ENDPOINT = "https://openrouter.ai/api/v1/chat/completions"
 
 # ---------------------------
