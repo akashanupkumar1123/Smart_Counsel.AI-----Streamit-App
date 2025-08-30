@@ -12,13 +12,8 @@ from pathlib import Path
 # Paths
 # ---------------------------
 
-
-# Project root: Streamlit/
-ROOT_DIR = Path.cwd()
-
-
-# RAG_data is inside RAG_utils
-DATA_DIR = ROOT_DIR / "RAG_utils" / "RAG_data"
+BASE_DIR = Path(__file__).resolve().parent  # this file's folder
+DATA_DIR = BASE_DIR.parent / "RAG_utils" / "RAG_data"
 
 RAG_DF_FILE = DATA_DIR / "final_rag_df.pkl"
 RAG_INDEX_FILE = DATA_DIR / "final_rag_index.faiss"
