@@ -29,9 +29,15 @@ from RAG_utils.rag_utils import search_colleges, drill_down_college, rag_index
 # ---------------------------
 # Load raw CSV for full info (for context + drill-down)
 # ---------------------------
-ROOT_DIR = Path.cwd()
-RAW_FILE = ROOT_DIR / "RAG_utils" / "RAG_data" / "final_rag.csv"
-raw_df = pd.read_csv(RAW_FILE)
+BASE_DIR = Path(__file__).resolve().parent  # folder of faq.py
+DATA_DIR = BASE_DIR.parent / "RAG_utils" / "RAG_data"
+RAW_FILE = DATA_DIR / "final_rag.csv"
+
+if RAW_FILE.exists():
+    raw_df = pd.read_csv(RAW_FILE)
+else:
+    st.error(f"❌ File not found: {RAW_FILE}")
+
 
 # ---------------------------
 # DummyModel to wrap embedding
