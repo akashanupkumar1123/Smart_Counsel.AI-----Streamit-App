@@ -1,0 +1,21 @@
+# Core App & UI
+streamlit
+streamlit-lottie
+Pillow
+
+# NLP and Retrieval
+sentence-transformers
+faiss-cpu
+torch
+accelerate
+
+# Plotting (optional PNG visuals)
+matplotlib
+seaborn
+plotpy
+
+# Utilities
+pandas
+numpy
+gdown
+python-dotenv
