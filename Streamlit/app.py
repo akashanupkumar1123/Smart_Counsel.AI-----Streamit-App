@@ -39,6 +39,7 @@ def load_lottie(path: str):
     with open(path, "r") as f:
         return json.load(f)
 
+BASE_DIR = os.path.dirname(__file__)
 
 # === Sidebar Section ===
 with st.sidebar:
@@ -47,7 +48,7 @@ with st.sidebar:
     st.markdown("*Your all-in-one CET/COMEDK Counseling Assistant*")
 
     # Load Lottie Animation in Sidebar (Advisor/Guide animation)
-    lottie_path = "assets/animations/advisor.json"
+    lottie_path = os.path.join(BASE_DIR, "assets", "animations", "advisor.json")
     if os.path.exists(lottie_path):
         st_lottie(load_lottie(lottie_path), height=180)
     else:
@@ -90,7 +91,7 @@ st.markdown("Your trusted guide for **KCET & COMEDK** counseling.")
 # === College Map Section ===
 # Embeds an interactive HTML map of Karnataka Engineering Colleges
 st.subheader("🗺️ Karnataka Engineering Colleges Map")
-html_path = "assets/plots/karnataka_colleges_map.html"
+html_path = os.path.join(BASE_DIR, "assets", "plots", "karnataka_colleges_map.html")
 if os.path.exists(html_path):
     with open(html_path, 'r', encoding='utf-8') as f:
         html_content = f.read()
