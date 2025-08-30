@@ -1,10 +1,11 @@
 import streamlit as st
+import sys
 import asyncio
-asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+if sys.platform.startswith("win"):
+    asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
 from streamlit_lottie import st_lottie
 import json
 import os
-import sys
 from PIL import Image
 import numpy as np
 import pandas as pd
